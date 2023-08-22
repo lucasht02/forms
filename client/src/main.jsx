@@ -7,34 +7,10 @@ import {
 import App from './App.jsx'
 import './index.css'
 
-import { setPerguntas, setPerguntasA, setRespostasA1, setRespostasA2 } from './constants/index.js';
-import Respostas from './components/results/index.jsx';
-import Perguntas from './components/perguntas/index.jsx';
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Perguntas lista={setPerguntas} />,
-      },
-      {
-        path: "perguntasA",
-        element: <Perguntas lista={setPerguntasA} />,
-        children: [
-          { 
-            path: "respostasA1",
-            element: <Respostas lista={setRespostasA1} />
-          },
-          { 
-            path: "respostasA2",
-            element: <Respostas lista={setRespostasA2} />
-          },
-        ]
-      }
-    ],
   },
 ]);
 

@@ -1,8 +1,9 @@
+
 const setPerguntas = [
     {
         id: "perguntaA",
         text: "Pergunta A?",
-        link: "perguntasA"
+        link: "setPerguntasA"
     },
     {
         id: "perguntaB",
@@ -20,12 +21,12 @@ const setPerguntasA = [
     {
         id: "perguntaA1",
         text: "Pergunta A1?",
-        link: "respostasA1"
+        link: "setRespostasA1"
     },
     {
         id: "perguntaA2",
         text: "Pergunta A2?",
-        link: "respostasA2"
+        link: "setRespostasA2"
     },
 ]
 
@@ -80,5 +81,5 @@ export {
     setPerguntasB,
     setPerguntasC,
     setRespostasA1,
-    setRespostasA2
+    setRespostasA2,
 }
